@@ -29,8 +29,8 @@ const quizzes = {
             {
                 question: "Какое событие произошло раньше?",
                 options: [
-                    { text: "Основание ЛЭТИ", correct: false },
-                    { text: "Первая радиопередача Попова", correct: true },
+                    { text: "Основание ЛЭТИ", correct: true },
+                    { text: "Первая радиопередача Попова", correct: false },
                     { text: "Революция 1917 года", correct: false },
                     { text: "Великая Отечественная война", correct: false }
                 ]
@@ -43,10 +43,10 @@ const quizzes = {
             {
                 question: "Кто был первым ректором ЛЭТИ?",
                 options: [
-                    { text: "А.С. Попов", correct: true },
+                    { text: "А.С. Попов", correct: false },
                     { text: "П.Л. Капица", correct: false },
                     { text: "В.И. Вернадский", correct: false },
-                    { text: "Д.И. Менделеев", correct: false }
+                    { text: "Н.Г. Писаревский", correct: true }
                 ]
             }
         ]

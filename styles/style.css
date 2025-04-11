@@ -27,7 +27,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(162, 163, 171, 0.7), rgba(162, 163, 171, 0.7)), url(../images/logo.jpg);
+    background: linear-gradient(rgba(162, 163, 171, 0.7), rgba(162, 163, 171, 0.7)), url(../images/bg.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -116,42 +116,6 @@ h3 {
 
 .nav fa{
     display: none;
-}
-@media(max-width: 700px) {
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #0069ba;
-        height: 100vh;
-        width: 250px;
-        right: 80px;
-        top: 0;
-        z-index: 2;
-        text-align: left;
-        transition: 1s;
-    }
-    .nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px; 
-    }
-    .nav-links ul {
-        padding: 30px;
-    }
 }
 
 /*--- Leti---*/
@@ -365,9 +329,9 @@ button:hover::before {
   .popup img{
     box-shadow:5px 5px 5px #5b4545;
     transition: 0.5s;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
   }
   .popup img:hover{
     transform: scale(1.1);
@@ -380,6 +344,10 @@ button:hover::before {
     max-width: 500px;
     width: 90%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .close-btn {
