@@ -324,6 +324,8 @@ button:hover::before {
     z-index: 1000;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   .popup img{
@@ -347,7 +349,8 @@ button:hover::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+   
   }
   
   .close-btn {
@@ -409,10 +412,10 @@ button:hover::before {
     background-color: #10296f;
 }
 
-/* Эффект при наведении */
+
 .quiz-btn:hover {
-    background-color: #1e3b8a; /* Светлее синий при наведении */
-    transform: translateY(-3px); /* Поднимаем кнопку */
+    background-color: #1e3b8a;
+    transform: translateY(-3px);
     box-shadow: 0 7px 20px rgba(10, 36, 99, 0.4);
 }
 
@@ -430,39 +433,57 @@ h3{
     }
 }
 
-/*--------кампусы)---------*/
-.campus{
+/*--------экспонаты---------*/
+.exhibits{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50%;
+    padding-top: 10%;
 }
-.campus-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    display: block;
+.exhibits-col{
+    display: flex; 
+    gap: 10px;
 }
-.campus-col img{
-    width: 100%;
+.exhibits-col img{
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+.device {
+    height: auto; 
+    border: 2px solid #007bff; 
+    border-radius: 5px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
 
+.device:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(2, 88, 180, 0.907); 
 }
-.layer{
-    background: transparent;
-    height: 100%;
+
+.exhibit{
+    display: block;
+    position: fixed; 
     width: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    transition: 0.5s;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 90vh;
 }
-.layer:hover{
-    background: rgba(226,0,0,0.7);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top:0;
-    left:0;
+.exhibit img{
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+.exhibit img:hover{
+    transform: scale(1.0);
 }
