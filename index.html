@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>Elhistory</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo_leti.png"></a>
+                <div class="nav-links" id = "navLinks">
+                    <ul>
+                        <li id="active"><a href="index.html">HOME</a></li>
+                        <li><a href="beforewar.html">История до войны</a></li>
+                        <li><a href="warhistory.html">История в годы войны</a></li>
+                        <li><a href="nowadays.html">ЛЭТИ в наши дни</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="text-box">
+                <h3>По дорожкам прошлого</h3>
+                <p>История уникального Санкт-Петербургского государственного 
+                    электротехнического университета "ЛЭТИ" имени В.И. Ульянова
+                </p>
+            </div>
+        </div>
+    </div>
+    <!---Leti_fac---->
+    <div class="course">
+        <h1>Наши факультеты</h1>
+        <div class = "faculties">
+            <img src="images/fkti.png">
+            <img src="images/gf.png" id="gf">
+            <img src="images/frt.png">
+            <img src="images/fibs.jpg">
+            <img src="images/inproteh.jpg" id="inproteh">
+            <img src="images/fel.jpg">
+            <img src="images/fea.jpg">
+        </div>
+    </div>
+    
+    <!--- leti-->
+    <div class="card-container">
+        <!-- Ряд 1 -->
+        <div class="item-row">
+            <div class="card-item">
+                <div class="card" id="card1">
+                    <h2>Музей истории ЛЭТИ</h2>
+                    <p>Музей занимается сохранением и изучением памятников истории первого в России электротехнического высшего учебного заведения.</p>
+                    <img src="images/muzej.jpg">
+                    <p class="img-description">Рис.1 Музей истории ЛЭТИ</p>
+
+                    <button class="card-btn openPopup" id="openPopup1"><a href="#">Подробнее</a></button>
+                </div>
+            </div>
+            <div class="popup" id="popup1">
+                <div class="popup-content">
+                    <span class="close-btn closePopup" id="closePopup1">&times;</span>
+                    <h2>Музей истории ЛЭТИ</h2>
+                    <img src="images/muzej-laboratoriya-2025(2).jpg">
+                    <p class="img-description">Рис.2 Музей истории ЛЭТИ</p>
+                    <p>На площади 120 м2 представлены документы и экспонаты, свидетельствующие об основных этапах развития и 
+                        становления вуза, а также наиболее значимых событиях в развитии электротехнической науке России. 
+                        Всего в фонде музея хранится более 44000 предметов, документов и фотоматериалов.</p>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <div class="quiz-card" id="quiz1-container">
+                    <h3>Викторина 1</h3>
+                    <div class="quiz-content" id="quiz1"></div>
+                    <button class="quiz-btn" onclick="checkAnswers('quiz1')">Проверить</button>
+                    <div class="quiz-result" id="result1"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Ряд 2 -->
+        <div class="item-row">
+            <div class="quiz-item">
+                <div class="quiz-card" id="quiz2-container">
+                    <h3>Викторина 2</h3>
+                    <div class="quiz-content" id="quiz2"></div>
+                    <button class="quiz-btn" onclick="checkAnswers('quiz2')">Проверить</button>
+                    <div class="quiz-result" id="result2"></div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card" id="card2">
+                    <h2>Музей-квартира А.С. Попова</h2>
+                    <p>Мемориальный музей-квартира А.С. Попова находится в жилом доме Электротехнического института, построенном одновременно с 
+                        учебным корпусом. В этом доме жили многие крупные ученые-профессора ЭТИ.</p>
+                    <img src="images/kvpopova.jpg" alt="">
+                    <p class="img-description">Рис.2 Музей-квартира А.С. Попова</p>
+                    <p>В музее-квартире несомненный интерес представляет бытовая коллекция, в которую входит обстановка домашнего кабинета ученого, 
+                        гостиной, столовой и спальной комнаты. Часть демонстрируемых предметов была передана в музей членами семьи Поповых, часть – 
+                        подарена музею семьями их коллег и друзей.</p>
+                    <button class="card-btn" ><a href="#">Подробнее</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Ряд 3 -->
+        <div class="item-row">
+            <div class="card-item">
+                <div class="card">
+                    <h2>Музей-лаборатория А.С. Попова</h2>
+                    <p>Музей внесен в число уникальных объектов высших учебных заведений России. Основной фонд Мемориального музея А.С. Попова, 
+                        частью которого является музей-лаборатория, составляет более 15000 единиц хранения.</p>
+                        <img src="images/muzej-laboratoriya-2025.jpg" alt="">
+                        <p class="img-description">Рис.3 Музей-лаборатория А.С. Попова</p>
+                    <button class="card-btn" ><a href="#">Подробнее</a></button>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <div class="quiz-card" id="quiz3-container">
+                    <h3>Викторина 3</h3>
+                    <div class="quiz-content" id="quiz3"></div>
+                    <button class="quiz-btn" onclick="checkAnswers('quiz3')">Проверить</button>
+                    <div class="quiz-result" id="result3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!--campus ???-->
+    <section class="campus">
+        <h1>ТАКЖЕ ЭТИ ЭЭЭЭКСПОНАТЫ</h1>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/UZD-10.jpg" >
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js">
+
+
+    </script>
+</body>
+</html>
