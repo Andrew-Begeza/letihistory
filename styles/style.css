@@ -487,3 +487,45 @@ h3{
 .exhibit img:hover{
     transform: scale(1.0);
 }
+/*WARHISTORY*/
+.war-image{
+    max-width: 100%;  
+    height: auto;
+    display: block;  
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.war-image-2{
+    max-width: 100%;  
+    height: auto;
+    display: block;  
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.war-image-3{
+    max-width: 100%;  
+    height: auto;
+    display: block;  
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+.bwar-image{
+    max-width: 100%;  
+    height: auto;
+    display: block;  
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bwar-image-2{
+    max-width: 100%;  
+    height: auto;
+    display: block;  
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
